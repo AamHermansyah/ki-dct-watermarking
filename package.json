@@ -1,0 +1,53 @@
+{
+  "name": "@mizuka-wu/web-digital-watermarking",
+  "sideEffects": false,
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": [
+    "digital-watermarking",
+    "watermarking",
+    "opencv"
+  ],
+  "license": "MIT",
+  "author": {
+    "email": "mizuka.wu@outlook.com",
+    "name": "mizuka.wu",
+    "url": "https://www.mizuka.top"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mizuka-wu/web-digital-watermarking.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/lib/watermarking.d.ts",
+  "main": "./dist/web-digital-watermarking.umd.cjs",
+  "module": "./dist/web-digital-watermarking.js",
+  "exports": {
+    ".": {
+      "import": "./dist/web-digital-watermarking.js",
+      "require": "./dist/web-digital-watermarking.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:demo": "tsc && vite build -c vite.demo.config.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "viewerjs": "^1.11.6",
+    "vite": "^5.2.0",
+    "vite-plugin-commonjs": "^0.10.1",
+    "vite-plugin-dts": "^3.9.0",
+    "vite-plugin-wasm": "^3.3.0"
+  },
+  "dependencies": {
+    "@anpanman/opencv_ts": "^1.0.2",
+    "buffer": "^6.0.3",
+    "file-type": "^19.0.0",
+    "jimp": "^0.22.12"
+  }
+}
