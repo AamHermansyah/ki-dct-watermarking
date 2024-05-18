@@ -6,18 +6,10 @@ import { resolve } from 'path';
 
 export default defineConfig({
     build: {
-        target: 'esnext',
-        lib: {
-            entry: resolve(__dirname, './src/lib/watermarking.ts'),
-            name: '@mizuka-wu/web-digital-watermarking',
-            fileName: 'web-digital-watermarking'
-        },
         outDir: 'dist',
     },
     define: {
         global: 'window'
-    },
-    optimizeDeps: {
     },
     plugins: [
         dts({
