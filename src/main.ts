@@ -19,13 +19,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         type="button" 
         class="btn-active w-full font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
       >
-        Sisipkan Watermark
+        Sisipkan
       </button>
       <button 
         type="button" 
         class="btn-inactive w-full font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
       >
-        Extract Watermark
+        Ekstraksi
       </button>
     </div>
 
