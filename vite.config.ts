@@ -11,7 +11,8 @@ export default defineConfig({
             entry: resolve(__dirname, './src/lib/watermarking.ts'),
             name: '@mizuka-wu/web-digital-watermarking',
             fileName: 'web-digital-watermarking'
-        }
+        },
+        outDir: 'dist',
     },
     define: {
         global: 'window'
